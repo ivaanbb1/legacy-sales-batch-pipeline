@@ -1,48 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
   <title id="title">Flujo del proceso batch COBOL</title>
   <desc id="desc">PRODUCTS.DAT y SALES.DAT entran en SALESBATCH.cbl. El proceso genera SALES_CLEAN.csv, SALES_ERRORS.csv y SALES_REPORT.txt. El fichero limpio se carga en SQL y Power BI.</desc>
   <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#2f3a45" />
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,8 L11,4 z" fill="#2f3a45" />
     </marker>
     <style>
-      .box { fill: #ffffff; stroke: #d0d7de; stroke-width: 2; rx: 6; }
+      .box { fill: #ffffff; stroke: #d0d7de; stroke-width: 2; }
       .label { fill: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; }
+      .small { font-size: 19px; }
       .line { fill: none; stroke: #2f3a45; stroke-width: 2.5; marker-end: url(#arrow); }
     </style>
   </defs>
 
-  <rect width="1100" height="520" fill="#ffffff"/>
+  <rect width="1280" height="560" fill="#ffffff"/>
 
-  <rect class="box" x="70" y="135" width="210" height="70"/>
-  <text class="label" x="175" y="170">PRODUCTS.DAT</text>
+  <rect class="box" x="70" y="130" width="230" height="76" rx="6"/>
+  <text class="label" x="185" y="168">PRODUCTS.DAT</text>
 
-  <rect class="box" x="70" y="315" width="210" height="70"/>
-  <text class="label" x="175" y="350">SALES.DAT</text>
+  <rect class="box" x="70" y="350" width="230" height="76" rx="6"/>
+  <text class="label" x="185" y="388">SALES.DAT</text>
 
-  <rect class="box" x="390" y="225" width="230" height="80"/>
-  <text class="label" x="505" y="265">SALESBATCH.cbl</text>
+  <rect class="box" x="420" y="240" width="250" height="86" rx="6"/>
+  <text class="label" x="545" y="283">SALESBATCH.cbl</text>
 
-  <rect class="box" x="735" y="80" width="230" height="70"/>
-  <text class="label" x="850" y="115">SALES_CLEAN.csv</text>
+  <rect class="box" x="790" y="70" width="250" height="76" rx="6"/>
+  <text class="label" x="915" y="108">SALES_CLEAN.csv</text>
 
-  <rect class="box" x="735" y="225" width="230" height="70"/>
-  <text class="label" x="850" y="260">SALES_ERRORS.csv</text>
+  <rect class="box" x="790" y="240" width="250" height="76" rx="6"/>
+  <text class="label" x="915" y="278">SALES_ERRORS.csv</text>
 
-  <rect class="box" x="735" y="370" width="230" height="70"/>
-  <text class="label" x="850" y="405">SALES_REPORT.txt</text>
+  <rect class="box" x="790" y="410" width="250" height="76" rx="6"/>
+  <text class="label" x="915" y="448">SALES_REPORT.txt</text>
 
-  <rect class="box" x="990" y="80" width="70" height="70"/>
-  <text class="label" x="1025" y="115">SQL</text>
+  <rect class="box" x="1110" y="70" width="110" height="76" rx="6"/>
+  <text class="label" x="1165" y="108">SQL</text>
 
-  <rect class="box" x="990" y="190" width="90" height="70"/>
-  <text class="label" x="1035" y="225">Power BI</text>
+  <rect class="box" x="1110" y="200" width="120" height="76" rx="6"/>
+  <text class="label small" x="1170" y="238">Power BI</text>
 
-  <path class="line" d="M280 170 C330 170, 335 245, 390 255"/>
-  <path class="line" d="M280 350 C330 350, 335 285, 390 275"/>
-  <path class="line" d="M620 265 C675 265, 675 115, 735 115"/>
-  <path class="line" d="M620 265 L735 260"/>
-  <path class="line" d="M620 265 C675 265, 675 405, 735 405"/>
-  <path class="line" d="M965 115 L990 115"/>
-  <path class="line" d="M1025 150 L1035 190"/>
+  <path class="line" d="M300 168 C355 168, 360 250, 420 270"/>
+  <path class="line" d="M300 388 C355 388, 360 315, 420 296"/>
+
+  <path class="line" d="M670 283 C730 283, 730 108, 790 108"/>
+  <path class="line" d="M670 283 L790 278"/>
+  <path class="line" d="M670 283 C730 283, 730 448, 790 448"/>
+
+  <path class="line" d="M1040 108 L1110 108"/>
+  <path class="line" d="M1165 146 C1165 170, 1170 178, 1170 200"/>
 </svg>
