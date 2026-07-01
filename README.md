@@ -24,6 +24,9 @@ flowchart LR
     C --> F["SALES_REPORT.txt"]
     D --> G["SQL"]
     G --> H["Power BI"]
+
+    classDef readable fill:#ffffff,stroke:#d0d7de,color:#000000;
+    class A,B,C,D,E,F,G,H readable
 ```
 
 ## Estructura del proyecto
