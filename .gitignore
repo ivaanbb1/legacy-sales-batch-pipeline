@@ -1,0 +1,18 @@
+# COBOL build outputs
+*.exe
+*.dll
+*.so
+*.o
+*.obj
+
+# Local databases
+data/output/*.db
+data/output/*.sqlite
+
+# Editor files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db

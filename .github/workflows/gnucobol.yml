@@ -1,0 +1,36 @@
+name: GnuCOBOL CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install GnuCOBOL
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gnucobol || sudo apt-get install -y gnucobol4 || sudo apt-get install -y gnucobol3
+
+      - name: Show compiler version
+        run: cobc --version
+
+      - name: Compile and run batch
+        run: bash scripts/run.sh
+
+      - name: Validate generated outputs
+        run: |
+          test -f data/output/SALES_CLEAN.csv
+          test -f data/output/SALES_ERRORS.csv
+          test -f data/output/SALES_REPORT.txt
+          grep -q "Records read:" data/output/SALES_REPORT.txt
+          grep -q "Records accepted:" data/output/SALES_REPORT.txt
+          grep -q "Records rejected:" data/output/SALES_REPORT.txt
+          grep -q "Product does not exist" data/output/SALES_ERRORS.csv
+          grep -q "Quantity must be greater than zero" data/output/SALES_ERRORS.csv

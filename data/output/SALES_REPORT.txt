@@ -1,0 +1,7 @@
+SALES BATCH - CONTROL REPORT
+-----------------------------------
+Records read:      10
+Records accepted:  8
+Records rejected:  2
+Accepted cents:    466100
+Accepted amount:   4661.00 EUR
