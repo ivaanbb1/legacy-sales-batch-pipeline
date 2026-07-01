@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
+  <title id="title">Flujo del proceso batch COBOL</title>
+  <desc id="desc">PRODUCTS.DAT y SALES.DAT entran en SALESBATCH.cbl. El proceso genera SALES_CLEAN.csv, SALES_ERRORS.csv y SALES_REPORT.txt. El fichero limpio se carga en SQL y Power BI.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2f3a45" />
+    </marker>
+    <style>
+      .box { fill: #ffffff; stroke: #d0d7de; stroke-width: 2; rx: 6; }
+      .label { fill: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; }
+      .line { fill: none; stroke: #2f3a45; stroke-width: 2.5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1100" height="520" fill="#ffffff"/>
+
+  <rect class="box" x="70" y="135" width="210" height="70"/>
+  <text class="label" x="175" y="170">PRODUCTS.DAT</text>
+
+  <rect class="box" x="70" y="315" width="210" height="70"/>
+  <text class="label" x="175" y="350">SALES.DAT</text>
+
+  <rect class="box" x="390" y="225" width="230" height="80"/>
+  <text class="label" x="505" y="265">SALESBATCH.cbl</text>
+
+  <rect class="box" x="735" y="80" width="230" height="70"/>
+  <text class="label" x="850" y="115">SALES_CLEAN.csv</text>
+
+  <rect class="box" x="735" y="225" width="230" height="70"/>
+  <text class="label" x="850" y="260">SALES_ERRORS.csv</text>
+
+  <rect class="box" x="735" y="370" width="230" height="70"/>
+  <text class="label" x="850" y="405">SALES_REPORT.txt</text>
+
+  <rect class="box" x="990" y="80" width="70" height="70"/>
+  <text class="label" x="1025" y="115">SQL</text>
+
+  <rect class="box" x="990" y="190" width="90" height="70"/>
+  <text class="label" x="1035" y="225">Power BI</text>
+
+  <path class="line" d="M280 170 C330 170, 335 245, 390 255"/>
+  <path class="line" d="M280 350 C330 350, 335 285, 390 275"/>
+  <path class="line" d="M620 265 C675 265, 675 115, 735 115"/>
+  <path class="line" d="M620 265 L735 260"/>
+  <path class="line" d="M620 265 C675 265, 675 405, 735 405"/>
+  <path class="line" d="M965 115 L990 115"/>
+  <path class="line" d="M1025 150 L1035 190"/>
+</svg>
